@@ -1,3 +1,13 @@
+.fieldNotOk {
+-fx-background-color: lightpink;
+}
+
+.fieldOk {
+-fx-background-color: yellowgreen;
+}
+
+
+
 .buttonsStandard {
     -fx-background-color:
           linear-gradient(#f0ff35, #a9ff00),
@@ -6,7 +16,8 @@
       -fx-background-insets: 0, 1;
       -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
       -fx-text-fill: #395306;
-  }
+}
+
 
 .menuOptionBtns {
 -fx-font-weight: bold;
@@ -17,8 +28,9 @@
 -fx-background-color: lightgray;
 }
 
+
+
 .textFields {
- -fx-text-decoration: underline red;
 -fx-focus-color :  #FFFF00;
 }
 
