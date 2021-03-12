@@ -35,7 +35,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <TextField styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="fldUsername" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="4" />
       <Label text="Username or Email:" GridPane.rowIndex="4">
          <font>
             <Font size="15.0" />
@@ -58,13 +58,13 @@
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </ButtonBar>
-      <PasswordField styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <PasswordField fx:id="fldPassword" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="5" />
       <HBox>
          <children>
             <ButtonBar>
               <buttons>
                 <Button fx:id="btnLoginMenu" mnemonicParsing="false" styleClass="menuOptionBtns" text="LOG IN" underline="true" />
-                  <Button mnemonicParsing="false" onAction="#actionRegister" styleClass="menuOptionBtns" text="REGISTER" />
+                  <Button fx:id="btnRegisterMenu" mnemonicParsing="false" onAction="#actionRegister" styleClass="menuOptionBtns" text="REGISTER" />
               </buttons>
             </ButtonBar>
          </children>

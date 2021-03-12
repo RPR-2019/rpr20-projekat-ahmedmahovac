@@ -109,7 +109,7 @@ public class RegisterController {
              */
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Success");
-            alert.setHeaderText("Registration is successful");
+            alert.setHeaderText("Registration successful");
             alert.setContentText("You can proceed to login");
             alert.showAndWait();
             actionLogin();

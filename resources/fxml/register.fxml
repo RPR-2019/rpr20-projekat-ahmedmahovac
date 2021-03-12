@@ -89,7 +89,7 @@
          </tooltip></TextField>
       <PasswordField fx:id="fldPassword" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="8">
          <tooltip>
-            <Tooltip fx:id="ttPassword" text="This field cannot be empty. Password must contain digits, uppercase characters and cannot contain nor first nor last name" />
+            <Tooltip fx:id="ttPassword" text="This field cannot be empty. Password must contain digits, uppercase characters, at least 5 characters and cannot contain nor first nor last name" />
          </tooltip></PasswordField>
       <Label text="Email:" GridPane.rowIndex="6">
          <font>
