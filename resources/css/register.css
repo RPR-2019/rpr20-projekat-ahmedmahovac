@@ -1,9 +1,11 @@
 .fieldNotOk {
--fx-background-color: lightpink;
+-fx-border-color: lightpink;
+-fx-border-width: 2px;
 }
 
 .fieldOk {
--fx-background-color: yellowgreen;
+-fx-border-color: yellowgreen;
+-fx-border-width: 1.5px;
 }
 
 
@@ -24,11 +26,10 @@
 -fx-background-color: transparent;
 }
 
-.menuOptionBtns:pressed {
--fx-background-color: lightgray;
+
+.menuOptionBtns:hover {
+-fx-background-color: #ADFF2F;
 }
-
-
 
 .textFields {
 -fx-focus-color :  #FFFF00;
@@ -38,4 +39,5 @@
 .root {
     -fx-background-image: url("/img/backgroundLogin.png");
     -fx-background-repeat: stretch;
+    -fx-background-position: top center;
 }

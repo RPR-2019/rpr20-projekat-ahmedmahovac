@@ -8,6 +8,7 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
@@ -37,7 +38,10 @@
       <RowConstraints />
     </rowConstraints>
     <children>
-        <TextField fx:id="fldFirstName" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <TextField fx:id="fldFirstName" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <tooltip>
+            <Tooltip fx:id="ttFirstName" text="This field cannot be empty" />
+         </tooltip></TextField>
         <Label text="First name:" GridPane.rowIndex="4">
             <font>
                 <Font size="15.0" />
@@ -71,10 +75,22 @@
             </children>
         </HBox>
         <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="2" />
-      <TextField fx:id="fldEmail" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-      <TextField fx:id="fldUsername" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-      <TextField fx:id="fldLastName" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-      <PasswordField fx:id="fldPassword" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <TextField fx:id="fldEmail" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <tooltip>
+            <Tooltip fx:id="ttEmail" text="This field cannot be empty. Email must be unique" />
+         </tooltip></TextField>
+      <TextField fx:id="fldUsername" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <tooltip>
+            <Tooltip fx:id="ttUsername" text="This field cannot be empty. Username must be unique" />
+         </tooltip></TextField>
+      <TextField fx:id="fldLastName" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <tooltip>
+            <Tooltip fx:id="ttLastName" text="This field cannot be empty" />
+         </tooltip></TextField>
+      <PasswordField fx:id="fldPassword" styleClass="textFields" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <tooltip>
+            <Tooltip fx:id="ttPassword" text="This field cannot be empty. Password must contain digits, uppercase characters and cannot contain nor first nor last name" />
+         </tooltip></PasswordField>
       <Label text="Email:" GridPane.rowIndex="6">
          <font>
             <Font size="15.0" />

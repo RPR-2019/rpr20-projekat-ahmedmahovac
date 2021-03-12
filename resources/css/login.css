@@ -13,9 +13,12 @@
 -fx-background-color: transparent;
 }
 
-.menuOptionBtns:pressed {
--fx-background-color: lightgray;
+
+
+.menuOptionBtns:hover {
+-fx-background-color: #ADFF2F;
 }
+
 
 .textFields {
  -fx-text-decoration: underline red;
@@ -26,4 +29,5 @@
 .root {
     -fx-background-image: url("/img/backgroundLogin.png");
     -fx-background-repeat: stretch;
+    -fx-background-position: top center;
 }
